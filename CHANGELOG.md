@@ -1,0 +1,2 @@
+- Drop 1.20.x support
+- Add Feather, LabyMod, and Lunar to breaks list

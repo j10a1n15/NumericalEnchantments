@@ -1,19 +1,21 @@
 {
 	"schemaVersion": 1,
-	"id": "numericalenchantments",
+	"id": "${id}",
 	"version": "${version}",
-	"name": "Numerical Enchantments",
-	"description": "Converts roman numerals to arabic numbers.",
+	"name": "${name}",
+	"description": "${description}",
 	"authors": [
 		"Microcontrollers"
 	],
+	"contributors": [
+	],
 	"contact": {
-		"homepage": "https://modrinth.com/mod/numerical-enchantments",
-		"sources": "https://github.com/MicrocontrollersDev/Numerical-Enchantments",
-		"issues": "https://github.com/MicrocontrollersDev/Numerical-Enchantments/issues"
+		"homepage": "${modrinth}",
+		"sources": "${source}",
+		"issues": "${issues}"
 	},
-	"license": "LGPL-3.0",
-	"icon": "assets/numericalenchantments/icon.png",
+	"license": "${license}",
+	"icon": "assets/${id}/icon.png",
 	"environment": "client",
 	"entrypoints": {
 		"main": [
@@ -24,21 +26,27 @@
 		]
 	},
 	"mixins": [
-		"numericalenchantments.mixins.json"
+		"${id}.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15",
-		"minecraft": ">=1.20",
+		"fabricloader": ">=0.16.10",
+		"minecraft": "${mcdep}",
 		"java": ">=17",
 		"fabric-api": "*",
 		"yet_another_config_lib_v3": "*"
 	},
+	"breaks": {
+		"feather": "*",
+		"labymod": "*",
+		"ichor": "*"
+	},
 	"custom": {
 		"modmenu": {
 			"links": {
-				"modmenu.donate": "https://ko-fi.com/microcontrollers",
-				"modmenu.discord": "https://discord.gg/rejfv9kFJj",
-				"modmenu.modrinth": "https://modrinth.com/mod/numerical-enchantments"
+				"modmenu.kofi": "${kofi}",
+				"modmenu.discord": "${discord}",
+				"modmenu.modrinth": "${modrinth}",
+				"modmenu.curseforge": "${curseforge}"
 			},
 			"update_checker": true
 		}
