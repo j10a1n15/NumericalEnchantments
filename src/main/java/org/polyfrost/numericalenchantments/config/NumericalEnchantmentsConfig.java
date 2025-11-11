@@ -7,6 +7,8 @@ import org.polyfrost.oneconfig.api.config.v1.annotations.Switch;
 public class NumericalEnchantmentsConfig extends Config {
     public NumericalEnchantmentsConfig() {
         super(NumericalEnchantments.ID + ".json", NumericalEnchantments.NAME, Category.QOL);
+
+        loadFrom("patcher.toml");
     }
 
     @Switch(
